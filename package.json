@@ -1,0 +1,50 @@
+{
+  "name": "cloudflare-video-element",
+  "version": "0.0.1",
+  "description": "A custom element for the Cloudflare player with an API that matches the `<video>` API",
+  "type": "module",
+  "main": "cloudflare-video-element.js",
+  "repository": "luwes/cloudflare-video-element",
+  "author": "Wesley Luyten <me@wesleyluyten.com> (https://wesleyluyten.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/luwes/cloudflare-video-element#readme",
+  "bugs": {
+    "url": "https://github.com/luwes/cloudflare-video-element/issues"
+  },
+  "scripts": {
+    "lint": "npx eslint *.js",
+    "test": "wet run",
+    "dev": "wet serve"
+  },
+  "dependencies": {
+    "super-media-element": "^0.4.2"
+  },
+  "devDependencies": {
+    "wet-run": "^0.0.7"
+  },
+  "eslintConfig": {
+    "root": true,
+    "globals": {
+      "globalThis": "writable"
+    },
+    "env": {
+      "browser": true,
+      "es6": true,
+      "mocha": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    }
+  },
+  "keywords": [
+    "cloudflare",
+    "video",
+    "player",
+    "web component",
+    "custom element"
+  ]
+}
