@@ -1,3 +1,7 @@
+# [1.0.0](https://github.com/luwes/cloudflare-video-element/compare/v0.1.0...v1.0.0) (2023-04-07)
+
+
+
 # 0.1.0 (2023-04-07)
 
 
