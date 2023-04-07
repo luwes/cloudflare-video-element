@@ -1,6 +1,6 @@
 {
   "name": "cloudflare-video-element",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A custom element for the Cloudflare player with an API that matches the `<video>` API",
   "type": "module",
   "main": "cloudflare-video-element.js",
