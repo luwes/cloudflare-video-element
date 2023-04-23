@@ -47,6 +47,7 @@ This will register the custom elements with the browser so they can be used as H
 - [Media Chrome](https://github.com/muxinc/media-chrome) Your media player's dancing suit. 🕺
 - [`<youtube-video>`](https://github.com/muxinc/youtube-video-element) A custom element for the YouTube player.
 - [`<vimeo-video>`](https://github.com/luwes/vimeo-video-element) A custom element for the Vimeo player.
+- [`<spotify-audio>`](https://github.com/luwes/wistia-video-element) A custom element for the Spotify player.
 - [`<jwplayer-video>`](https://github.com/luwes/jwplayer-video-element) A custom element for the JW player.
 - [`<wistia-video>`](https://github.com/luwes/wistia-video-element) A custom element for the Wistia player.
 - [`<videojs-video>`](https://github.com/luwes/videojs-video-element) A custom element for Video.js.
