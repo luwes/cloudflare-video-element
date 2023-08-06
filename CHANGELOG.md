@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/luwes/cloudflare-video-element/compare/v1.0.0...v1.0.1) (2023-08-06)
+
+
+### Bug Fixes
+
+* potential server type errors ([9fed02a](https://github.com/luwes/cloudflare-video-element/commit/9fed02a1bd70447629ce1cc444620c0127cf7751))
+
+
+
 # [1.0.0](https://github.com/luwes/cloudflare-video-element/compare/v0.1.0...v1.0.0) (2023-04-07)
 
 
