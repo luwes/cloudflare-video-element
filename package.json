@@ -12,33 +12,12 @@
     "url": "https://github.com/luwes/cloudflare-video-element/issues"
   },
   "scripts": {
-    "lint": "npx eslint *.js",
+    "lint": "npx eslint *.js -c ./node_modules/wet-run/.eslintrc.json",
     "test": "wet run",
     "dev": "wet serve"
   },
-  "dependencies": {
-    "super-media-element": "^0.4.2"
-  },
   "devDependencies": {
-    "wet-run": "^0.0.7"
-  },
-  "eslintConfig": {
-    "root": true,
-    "globals": {
-      "globalThis": "writable"
-    },
-    "env": {
-      "browser": true,
-      "es6": true,
-      "mocha": true
-    },
-    "extends": [
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2022,
-      "sourceType": "module"
-    }
+    "wet-run": "^0.2.0"
   },
   "keywords": [
     "cloudflare",
