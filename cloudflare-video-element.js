@@ -40,7 +40,7 @@ const MATCH_SRC = /(?:cloudflarestream\.com|videodelivery\.net)\/(\w+)/i;
 const API_URL = 'https://embed.videodelivery.net/embed/sdk.latest.js';
 const API_GLOBAL = 'Stream';
 
-const templateShadowDOM = document.createElement('template');
+const templateShadowDOM = globalThis.document?.createElement('template');
 templateShadowDOM.innerHTML = /*html*/`
 <style>
   :host {
@@ -60,7 +60,7 @@ templateShadowDOM.innerHTML = /*html*/`
 </style>
 `;
 
-class CloudflareVideoElement extends HTMLElement {
+class CloudflareVideoElement extends (globalThis.HTMLElement ?? class {}) {
   static observedAttributes = [
     'autoplay',
     'controls',
@@ -430,7 +430,7 @@ function removeFalsy(obj) {
   return Object.fromEntries(Object.entries(obj).filter(([, v]) => v));
 }
 
-if (!globalThis.customElements.get('cloudflare-video')) {
+if (globalThis.customElements && !globalThis.customElements.get('cloudflare-video')) {
   globalThis.customElements.define('cloudflare-video', CloudflareVideoElement);
 }
 
