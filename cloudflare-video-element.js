@@ -76,6 +76,7 @@ class CloudflareVideoElement extends (globalThis.HTMLElement ?? class {}) {
   #hasLoaded;
   #noInit;
   #options;
+  #readyState = 0;
 
   constructor() {
     super();
@@ -93,6 +94,7 @@ class CloudflareVideoElement extends (globalThis.HTMLElement ?? class {}) {
     }
     this.#hasLoaded = true;
 
+    this.#readyState = 0;
     this.dispatchEvent(new Event('emptied'));
 
     let oldApi = this.api;
@@ -144,6 +146,18 @@ class CloudflareVideoElement extends (globalThis.HTMLElement ?? class {}) {
 
       const Stream = await loadScript(API_URL, API_GLOBAL);
       this.api = Stream(iframe);
+
+      this.api.addEventListener('loadedmetadata', () => {
+        this.#readyState = 1; // HTMLMediaElement.HAVE_METADATA
+      });
+
+      this.api.addEventListener('loadeddata', () => {
+        this.#readyState = 2; // HTMLMediaElement.HAVE_CURRENT_DATA
+      });
+
+      this.api.addEventListener('playing', () => {
+        this.#readyState = 3; // HTMLMediaElement.HAVE_FUTURE_DATA
+      });
 
       // The video events are dispatched on the api instance.
       // This makes it possible to add event listeners before the element is upgraded.
@@ -213,7 +227,7 @@ class CloudflareVideoElement extends (globalThis.HTMLElement ?? class {}) {
   }
 
   get readyState() {
-    return this.api?.readyState;
+    return this.#readyState;
   }
 
   get videoWidth() {
