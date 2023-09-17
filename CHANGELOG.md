@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/luwes/cloudflare-video-element/compare/v1.0.1...v1.0.2) (2023-09-17)
+
+
+### Bug Fixes
+
+* add readyState workaround fix [#1](https://github.com/luwes/cloudflare-video-element/issues/1) ([09c8592](https://github.com/luwes/cloudflare-video-element/commit/09c8592914ea4b809cd34a609c6d157fa15f2283))
+
+
+
 ## [1.0.1](https://github.com/luwes/cloudflare-video-element/compare/v1.0.0...v1.0.1) (2023-08-06)
 
 
