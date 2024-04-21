@@ -12,7 +12,7 @@
     "url": "https://github.com/luwes/cloudflare-video-element/issues"
   },
   "scripts": {
-    "lint": "npx eslint *.js -c ./node_modules/wet-run/.eslintrc.json",
+    "lint": "npx eslint@8 *.js -c ./node_modules/wet-run/.eslintrc.json",
     "test": "wet run",
     "dev": "wet serve"
   },

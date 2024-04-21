@@ -36,7 +36,7 @@ export const VideoEvents = [
 ];
 
 const EMBED_BASE = 'https://iframe.videodelivery.net';
-const MATCH_SRC = /(?:cloudflarestream\.com|videodelivery\.net)\/(\S+)/i;
+const MATCH_SRC = /(?:cloudflarestream\.com|videodelivery\.net)\/([\w-.]+)/i;
 const API_URL = 'https://embed.videodelivery.net/embed/sdk.latest.js';
 const API_GLOBAL = 'Stream';
 
