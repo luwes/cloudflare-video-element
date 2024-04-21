@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/luwes/cloudflare-video-element/compare/v1.0.2...v1.0.3) (2024-04-21)
+
+
+### Bug Fixes
+
+* video id regex ([#4](https://github.com/luwes/cloudflare-video-element/issues/4)) ([9a2c61a](https://github.com/luwes/cloudflare-video-element/commit/9a2c61a457c19223bdb27250f95bcd51fb2c747e)), closes [#3](https://github.com/luwes/cloudflare-video-element/issues/3)
+
+
+
 ## [1.0.2](https://github.com/luwes/cloudflare-video-element/compare/v1.0.1...v1.0.2) (2023-09-17)
 
 
