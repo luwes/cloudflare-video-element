@@ -1,7 +1,7 @@
 # `<cloudflare-video>` 
 
-[![Version](https://img.shields.io/npm/v/cloudflare-video-element?style=flat-square)](https://www.npmjs.com/package/cloudflare-video-element) 
-[![Badge size](https://img.badgesize.io/https://cdn.jsdelivr.net/npm/cloudflare-video-element/+esm?compression=gzip&label=gzip&style=flat-square)](https://cdn.jsdelivr.net/npm/cloudflare-video-element/+esm)
+[![Version](https://img.shields.io/npm/v/cloudflare-video-element?style=flat-square&color=success)](https://www.npmjs.com/package/cloudflare-video-element) 
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/cloudflare-video-element?style=flat-square&label=gzip)](https://bundlephobia.com/result?p=cloudflare-video-element) 
 
 A [custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) 
 for the Cloudflare player with an API that matches the 
